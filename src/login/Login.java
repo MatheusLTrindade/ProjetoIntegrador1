@@ -26,7 +26,7 @@ public class Login {
 	JLabel user = new JLabel("USUARIO: ");
 	JTextField login = new JTextField ();
 		
-	JLabel senha1 = new JLabel ("SENHA: "); 
+	JLabel senha1 = new JLabel ("PASS: "); 
     
 	JPasswordField senha2 = new JPasswordField ();
 	    
