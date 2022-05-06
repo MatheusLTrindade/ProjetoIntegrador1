@@ -20,8 +20,7 @@ public class Popup {
 	JLabel user = new JLabel("USUARIO: ");
 	JTextField login = new JTextField ();
 		
-	JLabel password = new JLabel ("SENHA: ");	
-	JPasswordField senha2 = new JPasswordField ();	    
+	JLabel password = new JLabel ("SENHA: ");
 	
     public static void main(String st[]) {
         SwingUtilities.invokeLater( new Runnable() {
@@ -52,7 +51,16 @@ public class Popup {
     			Login mylogin = new Login();
                 mylogin.load();    							
     		}
-    	});
+    	});	
+        
+    	JPasswordField senha2 = new JPasswordField ();
+    	senha2.addActionListener(new ActionListener() {
+    		
+    		@Override
+    		public void actionPerformed(ActionEvent e) {
+    			b1.doClick(13);	
+    		}
+        });
 
     frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     frame.setSize(new Dimension(270, 150));

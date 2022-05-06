@@ -24,11 +24,9 @@ public class Login {
 	JLabel picture = new JLabel(gif);
 	
 	JLabel user = new JLabel("USUARIO: ");
-	JTextField login = new JTextField ();
+    JTextField login = new JTextField ();
 		
 	JLabel senha1 = new JLabel ("SENHA: "); 
-    
-	JPasswordField senha2 = new JPasswordField ();
 	    
     public static void main(String st[]){
         SwingUtilities.invokeLater( new Runnable(){
@@ -39,7 +37,7 @@ public class Login {
         });
     }
     public void load() {
-	    	
+    	
     	JButton b1 = new JButton("ENTRAR");
         b1.addActionListener(new ActionListener(){
 	    		
@@ -49,7 +47,7 @@ public class Login {
     			Menu mymenu = new Menu();
                 mymenu.load();	                
     		}
-    	});
+    	}); 
 
     	JButton b2 = new JButton("CADASTRAR");
         b2.addActionListener(new ActionListener(){
@@ -68,7 +66,16 @@ public class Login {
     		public void actionPerformed(ActionEvent e){ //add+ encerrar app
     			System.exit(0);   							
     		}
-    	});
+    	}); 
+        
+        JPasswordField senha2 = new JPasswordField ();
+    	senha2.addActionListener(new ActionListener() {
+    		
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				b1.doClick(13);	
+			}
+	    });
 
     frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     frame.setSize(new Dimension(700, 700));
