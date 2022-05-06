@@ -30,9 +30,8 @@ public class Menu {
                 mymenu.load();
             }
         });
-        //comentario teste
-
     }
+    
     public void load() {
     	
         JButton b1 = new JButton("JOGAR");
@@ -42,8 +41,7 @@ public class Menu {
     		public void actionPerformed(ActionEvent e) {
     			frame.dispose();
     			Quest01 myquest01 = new Quest01();
-                myquest01.load();
-                
+                myquest01.load();   
     		}
     	});
         
