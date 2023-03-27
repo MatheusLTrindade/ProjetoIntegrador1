@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>PI</name>
+	<name>ProjetoTeste</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -14,21 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/login/pixel-jeff-matrix-s.gif</name>
-			<type>1</type>
-			<location>C:/Users/mathe/eclipse-workspace/PI/pixel-jeff-matrix-s.gif</location>
-		</link>
-		<link>
-			<name>src/menu/ezgif.com-gif-maker.gif</name>
-			<type>1</type>
-			<location>C:/Users/mathe/eclipse-workspace/PI/ezgif.com-gif-maker.gif</location>
-		</link>
-		<link>
-			<name>src/menu/pixel-jeff-matrix-s.gif</name>
-			<type>1</type>
-			<location>C:/Users/mathe/eclipse-workspace/PI/pixel-jeff-matrix-s.gif</location>
-		</link>
-	</linkedResources>
 </projectDescription>
